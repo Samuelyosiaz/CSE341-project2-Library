@@ -1,0 +1,16 @@
+{
+  "name": "cse341-project2-library",
+  "version": "1.0.0",
+  "description": "CSE341-project2-library",
+  "repository": {
+    "type": "git",
+    "url": "cse341-project2-library"
+  },
+  "license": "ISC",
+  "author": "Samuel Sandoval",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
