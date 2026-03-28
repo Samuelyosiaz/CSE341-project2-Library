@@ -118,7 +118,7 @@
       },
       "put": {
         "tags": [
-          "book"
+          "books"
         ],
         "description": "",
         "parameters": [
@@ -170,7 +170,7 @@
       },
       "delete": {
         "tags": [
-          "book"
+          "books"
         ],
         "description": "",
         "parameters": [
