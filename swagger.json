@@ -1,11 +1,11 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "My API",
-    "description": "Library",
+    "title": "Library API",
+    "description": "API for managing books and users in a library system",
     "version": "1.0.0"
   },
-  "host": "localhost:3000",
+  "host": "cse341-project2-library.onrender.com",
   "basePath": "/",
   "schemes": [
     "https"
@@ -21,7 +21,7 @@
         }
       }
     },
-    "/api-docs": {
+    "/api-docs/": {
       "get": {
         "description": "",
         "responses": {
@@ -37,12 +37,12 @@
           "books"
         ],
         "description": "",
-        "produces": [
-          "application/json"
-        ],
         "responses": {
           "200": {
             "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
           }
         }
       },
@@ -84,11 +84,11 @@
           }
         ],
         "responses": {
-          "204": {
-            "description": "No Content"
+          "201": {
+            "description": "Created"
           },
-          "500": {
-            "description": "Internal Server Error"
+          "400": {
+            "description": "Bad Request"
           }
         }
       }
@@ -118,7 +118,7 @@
       },
       "put": {
         "tags": [
-          "books"
+          "book"
         ],
         "description": "",
         "parameters": [
@@ -160,17 +160,17 @@
           }
         ],
         "responses": {
-          "204": {
-            "description": "No Content"
+          "200": {
+            "description": "OK"
           },
-          "500": {
-            "description": "Internal Server Error"
+          "400": {
+            "description": "Bad Request"
           }
         }
       },
       "delete": {
         "tags": [
-          "books"
+          "book"
         ],
         "description": "",
         "parameters": [
@@ -182,11 +182,8 @@
           }
         ],
         "responses": {
-          "204": {
-            "description": "No Content"
-          },
-          "500": {
-            "description": "Internal Server Error"
+          "200": {
+            "description": "OK"
           }
         }
       }
@@ -235,11 +232,11 @@
           }
         ],
         "responses": {
-          "204": {
-            "description": "No Content"
+          "201": {
+            "description": "Created"
           },
-          "500": {
-            "description": "Internal Server Error"
+          "400": {
+            "description": "Bad Request"
           }
         }
       }
@@ -302,11 +299,11 @@
           }
         ],
         "responses": {
-          "204": {
-            "description": "No Content"
+          "200": {
+            "description": "OK"
           },
-          "500": {
-            "description": "Internal Server Error"
+          "400": {
+            "description": "Bad Request"
           }
         }
       },
@@ -324,11 +321,8 @@
           }
         ],
         "responses": {
-          "204": {
-            "description": "No Content"
-          },
-          "500": {
-            "description": "Internal Server Error"
+          "200": {
+            "description": "OK"
           }
         }
       }

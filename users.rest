@@ -38,3 +38,38 @@ DELETE http://localhost:3000/users/ ###write id HTTP/1.1
 
 
 //PRODUCTION
+//LOCALHOST
+###Get all users
+GET https://cse341-project2-library.onrender.com/users
+content-type: application/json
+
+
+
+###Get 1 user
+GET https://cse341-project2-library.onrender.com/users/69bcadff89a016b2f0415a4f
+content-type: application/json
+
+###Create user
+POST https://cse341-project2-library.onrender.com/users HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Probe",
+    "lastName": "Test",
+    "email": "test@example.com",
+    "borrowedBooks": []
+}
+
+###PUT user
+PUT https://cse341-project2-library.onrender.com/users/ ###write id HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Jacobo",
+    "lastName": "Sandoval",
+    "email": "jacobotomas@gmail.com",
+    "borrowedBooks": []
+}
+
+###DETELE user
+DELETE https://cse341-project2-library.onrender.com/users/ ###write id HTTP/1.1

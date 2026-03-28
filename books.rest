@@ -5,11 +5,11 @@ content-type: application/json
 
 
 
-###Get 1 user
+###Get 1 book
 GET http://localhost:3000/books/69bc9e1e89a016b2f0415a40
 content-type: application/json
 
-###Create user
+###Create book
 POST http://localhost:3000/books HTTP/1.1
 content-type: application/json
 
@@ -23,7 +23,7 @@ content-type: application/json
     "available": true
 }
 
-###PUT user
+###PUT book
 PUT http://localhost:3000/books/ ###write id HTTP/1.1
 content-type: application/json
 
@@ -37,10 +37,53 @@ content-type: application/json
   "available": true
 }
 
-###DETELE user
+###DETELE book
 DELETE http://localhost:3000/books/ ###write id HTTP/1.1
 
 
 
 
+
+
 //PRODUCTION
+https://cse341-project2-library.onrender.com
+###Get all books
+GET https://cse341-project2-library.onrender.com/books
+content-type: application/json
+
+
+
+###Get 1 book
+GET https://cse341-project2-library.onrender.com/69bc9e1e89a016b2f0415a40
+content-type: application/json
+
+###Create book
+POST https://cse341-project2-library.onrender.com/books HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Probe",
+    "author": "Test",
+    "publicationYear": 9999,
+    "gender": "Test",
+    "editorial": "test",
+    "pages": 1,
+    "available": true
+}
+
+###PUT book
+PUT https://cse341-project2-library.onrender.com/books/ ###write id HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Journey to the Center of the Earth",
+  "author": "Jules Verne",
+  "publicationYear": 1864,
+  "gender": "Science Fiction / Adventure Novel",
+  "editorial": "Pierre-Jules Hetzel",
+  "pages": 183,
+  "available": true
+}
+
+###DETELE book
+DELETE https://cse341-project2-library.onrender.com/books/ ###write id HTTP/1.1
